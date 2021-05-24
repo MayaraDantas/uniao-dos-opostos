@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="sortcut icon" href="assets/img/icon-contato.png" type="image/x-icon" />
+
+
+    <title>Contato</title>
+</head>
+
+<body style="background-color: rgba(141, 140, 138,0.432);">
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(10, 127, 140);">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/icon-contato.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            CONTATO
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sol</a>
+                </li>
+                <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link" href="lua.html">Lua</a>
+                </li>
+                <a class="nav-link" href="#">Eclipse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /Menu -->
+
+    <!-- Formulario -->
+    <div class="container">
+        <h3 class="text-center mt-3">Entre em contato conosco</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="form-contato">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input id="nome" class="form-control" name="nome" placeholder="Digite seu Nome" type="text" onkeyup="validaNome()" required>
+                                <div id="txtNome"></div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input id="email" class="form-control" name="email" placeholder="Digite seu E-mail"
+                                    type="email" onkeyup="validaEmail()" required>
+                                    <div id="txtEmail"></div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" class="form-control" name="mensaegem"
+                                    placeholder="Digite sua mensagem" onkeyup="validaMensagem()" required></textarea>
+                                    <div id="txtMensagem"></div>
+                            </div>
+                            <div class="form-group text-center">
+                                <button class="btn btn-primary" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1983661064482!2d-46.33544458549247!3d-23.525366766148093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7ae062ce59a5%3A0x7b18cf39841b9066!2sCalmon%20Viana!5e0!3m2!1spt-BR!2sbr!4v1621857066553!5m2!1spt-BR!2sbr" 
+                        width="500" 
+                        height="337" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        class="embed-responsive embed-responsive-16by9"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Formulario -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/formulario.js"></script>
+</body>
+
+</html>
