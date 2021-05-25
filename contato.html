@@ -47,54 +47,185 @@
     <!-- Formulario -->
     <div class="container">
         <h3 class="text-center mt-3">Entre em contato conosco</h3>
-        <div class="row">
+        <div class="row mt-3">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <form id="form-contato">
                             <div class="form-group">
                                 <label for="nome">Nome</label>
-                                <input id="nome" class="form-control" name="nome" placeholder="Digite seu Nome" type="text" onkeyup="validaNome()" required>
+                                <input id="nome" class="form-control" name="nome" placeholder="Digite seu Nome"
+                                    type="text" onkeyup="validaNome()" required>
                                 <div id="txtNome"></div>
                             </div>
-        
+
                             <div class="form-group">
                                 <label for="email">E-mail</label>
                                 <input id="email" class="form-control" name="email" placeholder="Digite seu E-mail"
                                     type="email" onkeyup="validaEmail()" required>
-                                    <div id="txtEmail"></div>
+                                <div id="txtEmail"></div>
                             </div>
-        
+
                             <div class="form-group">
                                 <label for="mensagem">Mensagem</label>
                                 <textarea id="mensagem" class="form-control" name="mensaegem"
                                     placeholder="Digite sua mensagem" onkeyup="validaMensagem()" required></textarea>
-                                    <div id="txtMensagem"></div>
+                                <div id="txtMensagem"></div>
                             </div>
                             <div class="form-group text-center">
-                                <button class="btn btn-primary" type="submit">Enviar</button>
+                                <button class="btn btn-primary" type="submit" style="background-color: rgb(10, 127, 140);">Enviar</button>
                             </div>
                         </form>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1983661064482!2d-46.33544458549247!3d-23.525366766148093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7ae062ce59a5%3A0x7b18cf39841b9066!2sCalmon%20Viana!5e0!3m2!1spt-BR!2sbr!4v1621857066553!5m2!1spt-BR!2sbr" 
-                        width="500" 
-                        height="337" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy"
-                        class="embed-responsive embed-responsive-16by9"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1983661064482!2d-46.33544458549247!3d-23.525366766148093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7ae062ce59a5%3A0x7b18cf39841b9066!2sCalmon%20Viana!5e0!3m2!1spt-BR!2sbr!4v1621857066553!5m2!1spt-BR!2sbr"
+                            width="500" height="337" style="border:0;" allowfullscreen="" loading="lazy"
+                            class="embed-responsive embed-responsive-16by9"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- /Formulario -->
+
+    <!-- Sobre Nós -->
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12 mt-3 text-center">
+                <button type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target="#ExemploModalCentralizado" style="background-color: rgb(10, 127, 140);">
+                    SOBRE NÓS
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+                    aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="TituloModalCentralizado">David & Mayara</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar" >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6 text-justify">
+                                        <h6 class="text-center">SOBRE O DAVID</h6>
+                                        <p>
+                                            Meu nome é David tenho 22 anos, moro na Zona Leste de São Paulo,
+                                            sou uma pessoa mais reservada, porém gosto muito de jogar conversa fora. No
+                                            final do ano passo conclui minha a faculdade de análise e desenvolvimento de
+                                            sistemas, antes dela tinha iniciado faculdade em administração, mas não
+                                            curti muito e tranquei. Em 2017 entre no serviço militar da Força Aérea e
+                                            sai no começo desse ano para conseguir estudar na Generation Brasil. Sou fã
+                                            do verão e gosto muito do Sol.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-6 text-justify">
+                                        <h6 class="text-center">SOBRE A MAYARA</h6>
+                                        <p style="font-size: 15px;">
+                                            Meu nome é Mayara Dantas tenho 22 anos, sou da Zona Leste de São Paulo,
+                                            formada em Artes Cenicas e ja cheguei algumas vezes nos palcos. Já sai do
+                                            pais para cursar medicina, infelizmente não conclui ele por conta da
+                                            pandemia, porem obtive boas experiencias. Faço de tudo um pouco, da arte a
+                                            tecnologia!
+                                            Não tem nada nesse mundo que eu determine que não consigo.
+                                            Tudo è questão da importância e da sua vontade.
+                                            Aos 22 anos nessa nova missão, o mar da tecnologia, onde eu ainda estou na
+                                            maré, mas irei bem fundo. Uma curiosidade sobre mim é que sou apaixonada
+                                            pela Lua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h6 class="text-center">SOBRE O PROJETO E AGRADECIMENTOS</h6>
+                                        <p>
+                                            Recebemos esse grande desafio durante o bootcamp da Generation Brasil com o
+                                            fim de criar o front-end de um site aberto para qualquer tipo de ideia, no
+                                            meio dessa escolha nos reunimos e vimos que temos um assunto em comum que é
+                                            o Sol a Lua e todo o seu sistem, e pensamos porque não fazer um projeto
+                                            juntos falando sobre os dois ?!
+                                        </p>
+                                        <p>
+                                            Foi ai que iniciamos nossa grande ideia espero que tenham gostado, em breve traremos mais curiosidades sobre esse grande universo.
+                                        </p>
+                                        <p class="text-center">
+                                            <b>
+                                                Obrigades !!
+                                            </b>
+                                        </p>
+                                        <p class="text-center">
+                                            &#9728; &#127764; 
+                                        </p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/dvm.jpeg" alt="Foto de David e Mayara">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Sobre Nós -->
+
+    <!-- Rodapé -->
+    <footer class="text-light mt-3" style="background-color: #000916">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h6>Mayara Dantas</h6>
+                <h6 class="ml-5">David Santos</h6>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a href="https://www.linkedin.com/in/mayara-dantas-616967190/" target="_blank">
+                        <img src="assets/img/icon-linkedin.png" alt="Logo do LinkdIn" width="25px" height="25px">
+                    </a>
+                    <a href="https://www.instagram.com/_mayaradantass/" target="_blank">
+                        <img class="ml-3" src="assets/img/icon-instagram.png" alt="Logo do Instagram" width="25px"
+                            height="25px">
+                    </a>
+                    <a href="https://github.com/MayaraDantas" target="_blank">
+                        <img class="ml-3" src="assets/img/icon-github.png" alt="Logo do GitHub" width="25px"
+                            height="25px">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/david-santos-ab2b7916a/" target="_blank">
+                        <img class="ml-5" src="assets/img/icon-linkedin.png" alt="Logo do LinkdIn" width="25px"
+                            height="25px">
+                    </a>
+                    <a href="https://www.instagram.com/d4v1d.sm/" target="_blank">
+                        <img class="ml-3" src="assets/img/icon-instagram.png" alt="Logo do Instagram" width="25px"
+                            height="25px">
+                    </a>
+                    <a href="https://github.com/davidsm2k" target="_blank">
+                        <img class="ml-3" src="assets/img/icon-github.png" alt="Logo do GitHub" width="25px"
+                            height="25px">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center mt-3">
+                    <p>
+                        Todos os direitos reservados &copy
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Rodapé -->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
